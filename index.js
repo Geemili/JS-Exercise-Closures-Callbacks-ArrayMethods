@@ -180,7 +180,9 @@ function processDuplicateFree(list, callback) {
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 function getFullNames(runners) {
-    return runners.map(r => `${r.last_name}, ${r.first_name}`);
+    let fullNames = [];
+    runners.forEach(r => fullNames.push(`${r.last_name}, ${r.first_name}`));
+    return fullNames;
 }
 
 /**
@@ -196,7 +198,6 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
 }
 
 /**
